@@ -1,7 +1,7 @@
 /*
  * @Author: last order
  * @Date: 2019-08-08 13:04:15
- * @LastEditTime : 2020-02-14 14:23:51
+ * @LastEditTime : 2020-02-15 14:22:33
  */
 const path = require('path')
 const dir = path.resolve(__dirname, '../docs')
@@ -10,6 +10,13 @@ console.log(dir)
 module.exports = {
   base: '/LoPlayer-Docs/',
   dest: dir,
+  markdown: {
+    // lineNumbers: true,
+    toc: {
+      includeLevel: [2, 3]
+    }
+  },
+  plugins: ['autobar'],
   themeConfig: {
     nav: [{
       text: '学习',
