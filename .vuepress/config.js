@@ -1,7 +1,7 @@
 /*
  * @Author: last order
  * @Date: 2019-08-08 13:04:15
- * @LastEditTime : 2020-02-15 15:02:16
+ * @LastEditTime: 2020-02-15 15:12:53
  */
 const path = require('path')
 const dir = path.resolve(__dirname, '../docs')
@@ -18,6 +18,7 @@ module.exports = {
   },
   // plugins: ['autobar'],
   themeConfig: {
+    sidebar: 'auto',
     nav: [{
       text: '学习',
       link: '/guide/'

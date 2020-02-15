@@ -1,10 +1,8 @@
 <!--
  * @Author: last order
  * @Date: 2019-08-08 18:10:27
- * @LastEditTime : 2020-02-15 14:48:26
+ * @LastEditTime: 2020-02-15 15:13:31
  -->
-[[toc]]
-
 ## 介绍
 
 LoPlayer是一个基于原生js实现的一个播放器，支持了常见的mp4、hls、mpeg-dash等格式，采用半透明式的风格，整体看上去比较简洁。
