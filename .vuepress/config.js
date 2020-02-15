@@ -1,7 +1,7 @@
 /*
  * @Author: last order
  * @Date: 2019-08-08 13:04:15
- * @LastEditTime : 2020-02-15 14:22:33
+ * @LastEditTime : 2020-02-15 15:02:16
  */
 const path = require('path')
 const dir = path.resolve(__dirname, '../docs')
@@ -16,7 +16,7 @@ module.exports = {
       includeLevel: [2, 3]
     }
   },
-  plugins: ['autobar'],
+  // plugins: ['autobar'],
   themeConfig: {
     nav: [{
       text: '学习',

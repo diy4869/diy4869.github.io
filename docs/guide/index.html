@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>LoPlayer</title>
+    <meta name="description" content="一个简易的播放器">
+    
+    
+    <link rel="preload" href="/LoPlayer-Docs/assets/css/0.styles.0675df61.css" as="style"><link rel="preload" href="/LoPlayer-Docs/assets/js/app.d30609d6.js" as="script"><link rel="preload" href="/LoPlayer-Docs/assets/js/2.20a06a6b.js" as="script"><link rel="preload" href="/LoPlayer-Docs/assets/js/6.f9c92f87.js" as="script"><link rel="prefetch" href="/LoPlayer-Docs/assets/js/3.87f251c6.js"><link rel="prefetch" href="/LoPlayer-Docs/assets/js/4.fc2d7c93.js"><link rel="prefetch" href="/LoPlayer-Docs/assets/js/5.757c0c03.js"><link rel="prefetch" href="/LoPlayer-Docs/assets/js/7.c8fecd62.js">
+    <link rel="stylesheet" href="/LoPlayer-Docs/assets/css/0.styles.0675df61.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/LoPlayer-Docs/" class="home-link router-link-active"><!----> <span class="site-name">LoPlayer</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/LoPlayer-Docs/guide/" class="nav-link router-link-exact-active router-link-active">学习</a></div><div class="nav-item"><a href="https://github.com/diy4869/LoPlayer" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/LoPlayer-Docs/guide/" class="nav-link router-link-exact-active router-link-active">学习</a></div><div class="nav-item"><a href="https://github.com/diy4869/LoPlayer" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><p></p><div class="table-of-contents"><ul><li><a href="#介绍">介绍</a></li><li><a href="#安装">安装</a></li><li><a href="#基本使用">基本使用</a><ul><li><a href="#参数说明">参数说明</a></li></ul></li><li><a href="#计划">计划</a></li><li><a href="#重点">重点</a></li></ul></div><p></p> <h2 id="介绍"><a href="#介绍" aria-hidden="true" class="header-anchor">#</a> 介绍</h2> <p>LoPlayer是一个基于原生js实现的一个播放器，支持了常见的mp4、hls、mpeg-dash等格式，采用半透明式的风格，整体看上去比较简洁。</p> <h2 id="安装"><a href="#安装" aria-hidden="true" class="header-anchor">#</a> 安装</h2> <div class="language- extra-class"><pre class="language-text"><code>暂无。
+</code></pre></div><h2 id="基本使用"><a href="#基本使用" aria-hidden="true" class="header-anchor">#</a> 基本使用</h2> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">interface</span> <span class="token class-name">Options</span> <span class="token punctuation">{</span>
+  src<span class="token punctuation">:</span> <span class="token builtin">Array</span><span class="token operator">&lt;</span>object<span class="token operator">&gt;</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      src<span class="token punctuation">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span>
+      <span class="token keyword">type</span><span class="token punctuation">:</span> <span class="token builtin">string</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  autoPlay<span class="token operator">?</span><span class="token punctuation">:</span> <span class="token builtin">boolean</span><span class="token punctuation">,</span>
+  loop<span class="token operator">?</span><span class="token punctuation">:</span> <span class="token builtin">boolean</span><span class="token punctuation">,</span>
+  fullScreen<span class="token operator">?</span><span class="token punctuation">:</span> <span class="token builtin">boolean</span><span class="token punctuation">,</span>
+  screenShot<span class="token operator">?</span><span class="token punctuation">:</span> <span class="token builtin">boolean</span><span class="token punctuation">,</span>
+  speed<span class="token operator">?</span><span class="token punctuation">:</span> <span class="token builtin">number</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  defaultSpeed<span class="token operator">?</span><span class="token punctuation">:</span> <span class="token builtin">number</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> LoPlayer <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">LoPlayer</span><span class="token punctuation">(</span><span class="token string">'#LoPlayer'</span><span class="token punctuation">,</span> options<span class="token punctuation">:</span> Options<span class="token punctuation">)</span>
+
+</code></pre></div><h3 id="参数说明"><a href="#参数说明" aria-hidden="true" class="header-anchor">#</a> 参数说明</h3> <table><thead><tr><th>参数</th> <th>含义</th> <th>默认值</th></tr></thead> <tbody><tr><td>src</td> <td>要播放的视频列表, 里面是个对象，接受2个参数， src代表地址，type是类型，可选项为hls、dash、mp4三种，其余将自动检测。</td> <td>[]</td></tr> <tr><td>autoPlay</td> <td>自动播放</td> <td>false</td></tr> <tr><td>loop</td> <td>循环播放</td> <td>false</td></tr> <tr><td>fullScreen</td> <td>全屏</td> <td>false</td></tr> <tr><td>screenShot</td> <td>截图</td> <td>false</td></tr> <tr><td>speed</td> <td>播放速度，0.25到2之间</td> <td>[0.25, 0.5, 1, 1.25, 1.5, 1.75, 2]</td></tr> <tr><td>defaultSpeed</td> <td>默认播放速度</td> <td>1</td></tr></tbody></table> <h2 id="计划"><a href="#计划" aria-hidden="true" class="header-anchor">#</a> 计划</h2> <ul><li>清晰度切换 (看情况，没资源进行测试)</li> <li>上下集切换</li> <li>播放模式调整</li> <li>视频信息查看 (看情况)</li> <li>画中画 (看情况)</li> <li>弹幕功能（最后实现）</li></ul> <h2 id="重点"><a href="#重点" aria-hidden="true" class="header-anchor">#</a> 重点</h2> <ul><li>不支持移动端</li> <li>暂未完成，不建议使用</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/LoPlayer-Docs/assets/js/app.d30609d6.js" defer></script><script src="/LoPlayer-Docs/assets/js/2.20a06a6b.js" defer></script><script src="/LoPlayer-Docs/assets/js/6.f9c92f87.js" defer></script>
+  </body>
+</html>
