@@ -1,7 +1,7 @@
 /*
  * @Author: last order
  * @Date: 2019-08-08 13:04:15
- * @LastEditTime: 2020-02-15 15:12:53
+ * @LastEditTime: 2020-02-16 21:18:28
  */
 const path = require('path')
 const dir = path.resolve(__dirname, '../docs')
@@ -22,6 +22,10 @@ module.exports = {
     nav: [{
       text: '学习',
       link: '/guide/'
+    },
+    {
+      text: 'API',
+      link: '/api/'
     },
     {
       text: 'Github',

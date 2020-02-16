@@ -1,7 +1,7 @@
 <!--
  * @Author: last order
  * @Date: 2019-08-08 18:10:27
- * @LastEditTime: 2020-02-15 15:13:31
+ * @LastEditTime: 2020-02-16 15:32:14
  -->
 ## 介绍
 
@@ -16,13 +16,14 @@ LoPlayer是一个基于原生js实现的一个播放器，支持了常见的mp4�
 ## 基本使用
 
 ```ts
+
+interface Source {
+  src: String,
+  type: String
+}
+
 interface Options {
-  src: Array<object> [
-    {
-      src: string,
-      type: string
-    }
-  ],
+  src: Array<Source>,
   autoPlay?: boolean,
   loop?: boolean,
   fullScreen?: boolean,
@@ -31,7 +32,20 @@ interface Options {
   defaultSpeed?: number
 }
 
-const LoPlayer = new LoPlayer('#LoPlayer', options: Options)
+const LoPlayer = new LoPlayer('#LoPlayer', {
+  src: [
+    {
+      src: 'https://api.dogecloud.com/player/get.mp4?vcode=5ac682e6f8231991&userId=17&ext=.mp4',
+      type: 'video/mp4'
+    }
+  ],
+  autoPlay: false,
+  loop: false,
+  loop: false,
+  screenShot: false,
+  speed: [0.25, 0.5, 1, 1.25, 1.5, 1.75, 2],
+  defaultSpeed: 1
+})
 
 ```
 ### 参数说明
