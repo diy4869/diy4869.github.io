@@ -1,7 +1,7 @@
 <!--
  * @Author: last order
  * @Date: 2019-08-08 18:10:27
- * @LastEditTime: 2020-02-16 15:32:14
+ * @LastEditTime: 2020-05-04 16:57:38
  -->
 ## 介绍
 
@@ -9,8 +9,10 @@ LoPlayer是一个基于原生js实现的一个播放器，支持了常见的mp4�
 
 ## 安装
 
-```
-暂无。
+```bash
+npm install loplayer -S
+or
+yarn add loplayer
 ```
 
 ## 基本使用
@@ -19,11 +21,11 @@ LoPlayer是一个基于原生js实现的一个播放器，支持了常见的mp4�
 
 interface Source {
   src: String,
-  type: String
+  type?: String
 }
 
 interface Options {
-  src: Array<Source>,
+  src: string | Array<Source>,
   autoPlay?: boolean,
   loop?: boolean,
   fullScreen?: boolean,
@@ -32,7 +34,9 @@ interface Options {
   defaultSpeed?: number
 }
 
-const LoPlayer = new LoPlayer('#LoPlayer', {
+const player = document.getElementById(player)
+
+const LoPlayer = new LoPlayer(player, {
   src: [
     {
       src: 'https://api.dogecloud.com/player/get.mp4?vcode=5ac682e6f8231991&userId=17&ext=.mp4',
@@ -55,10 +59,8 @@ const LoPlayer = new LoPlayer('#LoPlayer', {
 src | 要播放的视频列表, 里面是个对象，接受2个参数， src代表地址，type是类型，可选项为hls、dash、mp4三种，其余将自动检测。 | []
 autoPlay | 自动播放 | false
 loop | 循环播放 | false
-fullScreen | 全屏 | false
 screenShot | 截图 | false
-speed | 播放速度，0.25到2之间 | [0.25, 0.5, 1, 1.25, 1.5, 1.75, 2]
-defaultSpeed | 默认播放速度 | 1
+speed | 播放速度 | [0.25, 0.5, 1, 1.25, 1.5, 1.75, 2]
 
 ## 计划
 
